@@ -1,0 +1,113 @@
+.navbar {
+    background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-6));
+    height: 100vh;
+    width: 298px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex: 1;
+  }
+
+  .twoRows {
+    display: flex;
+    flex: 0 0 60px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border-right: 1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-7));
+    background-color: #3B3B3B;
+  }
+  
+  .aside {
+    flex: 0 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .mainLink {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--mantine-radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  
+    &:hover {
+      background-color: #FFFFFF1A;
+    }
+  
+    &[data-active] {
+      &,
+      &:hover {
+        background-color: #FFFFFF33;
+        color: white;
+      }
+    }
+  }
+  
+  .title {
+    margin-bottom: var(--mantine-spacing-sm);
+    padding: var(--mantine-spacing-md);
+    padding-top: 18px;
+    height: 24px;
+    font-weight: 700;
+  }
+
+  .subTitle {
+    padding: var(--mantine-spacing-md);
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    padding-top: var(--mantine-spacing-md);
+  }
+
+  .divider{
+    margin-left: var(--mantine-spacing-md);
+    margin-right: var(--mantine-spacing-md);
+  }
+
+  .link {
+    display: block;
+    text-decoration: none;
+    border-radius: var(--mantine-radius-md);
+    color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
+    padding: 0 var(--mantine-spacing-md);
+    font-size: var(--mantine-font-size-sm);
+    margin-left: var(--mantine-spacing-md);
+    margin-right: var(--mantine-spacing-md);
+    font-weight: 500;
+    height: 44px;
+    line-height: 44px;
+  
+    &:hover {
+      background-color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+      color: light-dark(var(--mantine-color-dark), var(--mantine-color-light));
+    }
+  
+    &[data-active] {
+      &,
+      &:hover {
+        background-color: #3B3B3B;
+        color: var(--mantine-color-white);
+        border: none
+      }
+    }
+  }
